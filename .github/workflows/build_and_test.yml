@@ -24,6 +24,5 @@ jobs:
 
     - name: 'Build & Test'
       run: |
-        # Build the project, with its main file included, without unittests
         dmd -w -g src/sim_server.d src/timer_event.d -ofSimElevatorServer
 
