@@ -1,4 +1,4 @@
-Simulator mkII
+Simulator v2
 ==============
 
 This simulator is a drop-in alternative to the elevator hardware server that interfaces to the hardware at the lab. Communication to the simulator is over TCP, with the same protocol as the hardware server.
@@ -77,7 +77,7 @@ The server is written in D, so you will need a D compiler to run it. I recommend
 
 Compile with `dmd -w -g src/sim_server.d src/timer_event.d -ofSimElevatorServer`
 
-M1 architecture: 
+MacOS Intel(x86)/M1(arm) architecture: 
 Install LDC LLVM cross compiler for Dlang with `brew install ldc`
 and build with
 `ldc2 -O -release src/sim_server.d src/timer_event.d`
